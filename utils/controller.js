@@ -12,9 +12,11 @@ function strmatch(strA, strB) {
     for (let i = 0; i < strB.length; i++) {
       for (let j = pos >= 0 ? pos : 0; j < strA.length; j++) {
         if (strB[i] === strA[j]) {
-          pos = j;
+          pos = j + 1;
           isExist[i] = true;
           break;
+        } else {
+          isExist[i] = false;
         }
       }
     }
