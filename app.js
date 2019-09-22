@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 
 const indexRoute = require('./routes/index');
-require('./config/database');
+require('./config/database').connection();
 
 const corsOptions = {
   origin: true,
@@ -32,3 +32,6 @@ app.use('/', indexRoute);
 server.listen(port, () => {
   console.info(`Server is running on ${process.env.HOST}:${process.env.PORT}`);
 });
+
+
+module.exports = app;
