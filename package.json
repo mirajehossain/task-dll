@@ -14,8 +14,7 @@
     "dotenv": "^6.2.0",
     "express": "~4.16.0",
     "mongoose": "^5.7.1",
-    "only": "0.0.2",
-    "pm2": "^3.2.4"
+    "only": "0.0.2"
   },
   "devDependencies": {
     "chai": "4.2.0",
@@ -30,6 +29,5 @@
     "node": "10.16.0",
     "npm": "6.9.0"
   },
-  "author": "Md Alamin",
-  "license": "MIT"
+  "author": "Md Alamin"
 }
