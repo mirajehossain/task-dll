@@ -7,13 +7,19 @@ function strmatch(strA, strB) {
     return true;
   }
 
-  for (let i = 0; i < strB.length; i++) {
-    for (let j = 0; j < strA.length; j++) {
-      if (strB[i] === strA[j]) {
-        isExist[i] = true;
-        break;
+  if (strA.length >= strB.length) {
+    let pos = -1;
+    for (let i = 0; i < strB.length; i++) {
+      for (let j = pos >= 0 ? pos : 0; j < strA.length; j++) {
+        if (strB[i] === strA[j]) {
+          pos = j;
+          isExist[i] = true;
+          break;
+        }
       }
     }
+  } else {
+    return false;
   }
 
   if (isExist.length === strB.length && isExist.every(i => i === true)) {
