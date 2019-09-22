@@ -14,5 +14,5 @@ const StringMatchingSchema = new Schema({
 }, { versionKey: false });
 
 module.exports = {
-  StringMatchingModel: mongoose.model('subject', StringMatchingSchema),
+  StringMatchingModel: mongoose.model('dataList', StringMatchingSchema),
 };
