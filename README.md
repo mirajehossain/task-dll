@@ -10,6 +10,8 @@ npm i
 
 To run the project `npm start`
 
+local url: `localhost:8000`
+
 For test `npm test`
 
 App link: `https://task-dll.herokuapp.com`
